@@ -1,0 +1,5 @@
+{
+    "env": {
+        "NEXT_PUBLIC_API_URL": "https://6905b069ee3d0d14c13361c0.mockapi.io/product"
+    }
+}

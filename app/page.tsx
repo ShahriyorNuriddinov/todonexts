@@ -69,7 +69,8 @@ export default function Home() {
         setInput('');
       } catch (error) {
         console.error('Xatolik:', error);
-        alert('Vazifa qo\'shishda xatolik yuz berdi');
+        const errorMessage = error instanceof Error ? error.message : 'Noma\'lum xatolik';
+        alert(`Vazifa qo'shishda xatolik: ${errorMessage}\n\nBrauzer konsolini tekshiring (F12)`);
       } finally {
         setLoading(false);
       }
